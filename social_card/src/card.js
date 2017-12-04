@@ -7,11 +7,11 @@ import './card.css';
 class SocialCard extends React.Component {
 	render() {
 		return(
-			<div className="card">
+			<section className="card">
 				<CardTop/>
 				<CardMain/>
 				<CardBottom/>
-			</div>
+			</section>
 		);
 	}
 }

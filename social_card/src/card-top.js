@@ -2,7 +2,13 @@ import React from 'react';
 
 function CardTop() {
 	return(
-		<div className="card-top">This is the top of the card.</div>
+		<header className="card-top">
+			<div className="authorInfo">
+				<div className="icon">Image icon.</div>
+				<div className="creatorName">Author</div>
+			</div>
+			<div className="introText">This is a piece of introuctory text.</div>
+		</header>
 	);
 }
 

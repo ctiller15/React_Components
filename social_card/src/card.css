@@ -6,23 +6,51 @@
 	flex-grow: 1;
 }
 
-.card div{
+.card>*{
 	border: 1px solid green;
-	flex-basis: 100px;
+	flex-basis: 60px;
 	flex-grow: 1;
 }
 
-div.card-top{
-	/*flex-basis: 100px;*/
+.card-top{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
 
-div.card-main{
+.authorInfo{
+	display: flex;
+	justify-content: flex-start;
+}
+
+.card-main{
 	flex-basis: 300px;
 	display: flex;
 	align-self: center;
-	width: 80%;
+	width: 100%;
+	flex-direction: column;
+}
+
+.card-main>*{
+	flex-basis: 150px;
+	border: 1px solid red;
+	flex-grow: 1;
+}
+
+.card-image-bg{
+	flex-basis: 180px;
+}
+
+.card-preview-text{
+	flex-basis: 20px;
 }
 
 div.card-bottom{
 	/*flex-basis: 100px;*/
+}
+
+@media screen and(min-width: 768px){
+	.card-main{
+		width: 80%;
+	}
 }
