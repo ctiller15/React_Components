@@ -4,7 +4,7 @@ function CardMain(){
 	return(
 		<div className="card-main">
 			<div className="card-image-bg">
-				<img src="#" alt="this is an image!"></img>
+				<img src="#" alt="This is the thing we're talking about!"></img>
 			</div>
 			<div className="card-preview-text">
 				<h3>Social card title!</h3>
