@@ -45,8 +45,20 @@
 	flex-basis: 20px;
 }
 
-div.card-bottom{
-	/*flex-basis: 100px;*/
+.card-bottom{
+	display: flex;
+	flex-direction: row;
+}
+
+.card-bottom ul{
+	display: flex;
+	flex-direction: row;
+	flex-basis: 200px;
+	list-style: none;
+}
+
+.social li{
+	flex-basis: 80px;
 }
 
 @media screen and(min-width: 768px){
