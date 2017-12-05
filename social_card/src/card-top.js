@@ -4,12 +4,13 @@ function CardTop() {
 	return(
 		<header className="card-top">
 			<div className="author-info">
-				<div className="icon">Image icon.</div>
-				<div className="creator-name">Author name goes here</div>
+				<div className="icon">
+					{/*<img src={require("./images/matt-nelson.jpg")}/>*/}
+				</div>
+				<div className="creator-name">Matt Nelson via Unsplash</div>
 			</div>
 			<div className="intro-text">
-				<p>This is a piece of introuctory text.
-				Do you like this introductory text? I think it's pretty great.</p>
+				<p>Dogs are great. Training them is even better.</p>
 			</div>
 		</header>
 	);

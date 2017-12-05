@@ -29,7 +29,18 @@
 	width: 60px;
 	height: 60px;
 	margin: 5px;
+	overflow: hidden;
+	border-radius: 30px;
+	/*Change image with javascript when using multiple images.*/
+	background-image: url('./images/matt-nelson.jpg');
+	background-size: cover;
+	background-position: center;
 }
+
+/*.icon img{
+	width: 100%;
+	min-height: 100%;
+}*/
 
 .author-info .creator-name{
 	align-self: center;
@@ -55,6 +66,10 @@
 
 .card-image-bg{
 	flex-basis: 180px;
+	/*Again, use javascript and props to place different images in here.*/
+	background: url("./images/matt-nelson-259365.jpg");
+	background-size: cover;
+	background-position: center;
 }
 
 .card-preview-text{
@@ -76,7 +91,6 @@
 	list-style: none;
 	margin: 0;
 	padding: 0;
-
 }
 
 .social li{
@@ -85,7 +99,6 @@
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	margin-right: 20px;
 }
 
 .fa{
