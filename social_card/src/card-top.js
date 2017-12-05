@@ -1,16 +1,25 @@
 import React from 'react';
 
-function CardTop() {
+
+// var iconStyle = {
+// 	backgroundImage: url(`${props.author.authorImg}`)
+// }
+
+function CardTop(props) {
+	// ALWAYS require the image first before trying to use it w/ create-react-app.
+	const bgIcon = require(`${props.author.authorImg}`);
+
 	return(
 		<header className="card-top">
 			<div className="author-info">
-				<div className="icon">
+				<div className="icon" style={{backgroundImage: `url(${bgIcon})`}}>
+					{/*Photo by Matt Nelson on Unsplash*/}
 					{/*<img src={require("./images/matt-nelson.jpg")}/>*/}
 				</div>
-				<div className="creator-name">Matt Nelson via Unsplash</div>
+				<div className="creator-name">Matt Nelson via <a rel="noopener noreferrer" href={props.author.authorLink} target="_blank">Unsplash</a></div>
 			</div>
 			<div className="intro-text">
-				<p>Dogs are great. Training them is even better.</p>
+				<p>{props.author.authorText}</p>
 			</div>
 		</header>
 	);
