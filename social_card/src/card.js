@@ -9,9 +9,15 @@ class SocialCard extends React.Component {
 		super(props);
 		this.state = {
 						topProps: {
+							authorName: "Matt Nelson",
 							authorImg: "./images/matt-nelson.jpg",
 							authorLink: "https://unsplash.com/@mnelson",
 							authorText: "Dogs are great. Training them is even better."
+						},
+						mainProps: {
+							bgImage: "./images/matt-nelson-259365.jpg",
+							previewTitle: "Find a trainer near you!",
+							previewText: "Take a moment and search for the best, most effective dog trainers in your area."
 						}
 					};
 	}
@@ -19,7 +25,7 @@ class SocialCard extends React.Component {
 		return(
 			<section className="card">
 				<CardTop author={this.state.topProps}/>
-				<CardMain/>
+				<CardMain info={this.state.mainProps}/>
 				<CardBottom/>
 			</section>
 		);

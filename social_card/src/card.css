@@ -73,7 +73,7 @@
 .card-image-bg{
 	flex-basis: 180px;
 	/*Again, use javascript and props to place different images in here.*/
-	background: url("./images/matt-nelson-259365.jpg");
+	/*background: url("./images/matt-nelson-259365.jpg");*/
 	background-size: cover;
 	background-position: center;
 	flex-grow: 2;

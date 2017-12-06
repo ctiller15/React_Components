@@ -16,7 +16,7 @@ function CardTop(props) {
 					{/*Photo by Matt Nelson on Unsplash*/}
 					{/*<img src={require("./images/matt-nelson.jpg")}/>*/}
 				</div>
-				<div className="creator-name">Matt Nelson via <a rel="noopener noreferrer" href={props.author.authorLink} target="_blank">Unsplash</a></div>
+				<div className="creator-name">{props.author.authorName} via <a rel="noopener noreferrer" href={props.author.authorLink} target="_blank">Unsplash</a></div>
 			</div>
 			<div className="intro-text">
 				<p>{props.author.authorText}</p>
