@@ -1,9 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
+html{
+	--base-color: #FFE779;
+	--accent-color: #7459CF;
+	--card-main: #FFFFFF;
+	--dark-gray: #58564a;
+	--light-gray: #fbf8ed;
+	--borders: #DED7BF;
+}
+
 body{
 	margin: 0;
 	font-family: "Nunito";
-	--base-color: #FFE779;
+	background: var(--base-color);
+	color: var(--dark-gray);
 }
 
 .cardBoard{
@@ -16,12 +26,13 @@ body{
 }
 
 .card{
+	background: var(--card-main);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	flex-basis: 400px;
 	/*flex-grow: 1;*/
-	border: 1px solid black;
+	border: 1px solid var(--borders);
 	border-radius: 10px;
 	overflow: hidden;
 	margin-top: 10px;
@@ -45,6 +56,14 @@ body{
 	justify-content: flex-start;
 }
 
+.author-info a{
+	text-decoration: none;
+}
+
+.author-info a:hover{
+	text-decoration: underline;
+}
+
 .author-info .icon{
 	/*border: 1px solid purple;*/
 	width: 60px;
@@ -57,10 +76,10 @@ body{
 	background-position: center;
 }
 
-/*.icon img{
-	width: 100%;
-	min-height: 100%;
-}*/
+.author-info .icon:hover{
+	filter: opacity(80%);
+	cursor: pointer;
+}
 
 .author-info .creator-name{
 	align-self: center;
@@ -84,21 +103,25 @@ body{
 
 .card-main>*{
 	flex-basis: 150px;
-	/*border: 1px solid red;*/
 	flex-grow: 1;
 }
 
 .card-image-bg{
 	flex-basis: 180px;
 	/*Again, use javascript and props to place different images in here.*/
-	/*background: url("./images/matt-nelson-259365.jpg");*/
 	background-size: cover;
 	background-position: center;
 	flex-grow: 2;
 }
 
+.card-image-bg:hover{
+	cursor: pointer;
+	filter: opacity(75%);
+}
+
 .card-preview-text{
 	flex-basis: 20px;
+	margin: 5px 0px 5px 10px;
 	padding: 5px;
 }
 
@@ -109,6 +132,7 @@ body{
 .card-bottom{
 	display: flex;
 	flex-direction: row;
+	background: var(--light-gray);
 }
 
 .card-bottom ul{
@@ -131,12 +155,36 @@ body{
 	align-items: center;
 }
 
+.social li:hover{
+	color: var(--accent-color);
+	cursor: pointer;
+}
+
+.social li .animated{
+	animation-name: fadeout;
+	animation-duration: .5s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+}
+
+@keyframes fadeout{
+	0%{
+		background-color: var(--accent-color);
+		color: var(--light-gray);
+	}
+	100%{
+		background-color: var(--light-gray);
+		color: var(--accent-color);
+	}
+}
+
 .fa{
 	font-size: 1.8em;
 }
 
 .count{
 	font-size: 1.6em;
+	user-select: none;
 }
 
 @media screen and (min-width: 768px){
@@ -149,7 +197,7 @@ body{
 	}
 
 	.card-main .card-image-bg{
-		width: 80%;
+		width: 90%;
 		align-self: center;
 	}
 
