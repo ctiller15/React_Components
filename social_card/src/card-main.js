@@ -16,9 +16,9 @@ function CardMain(props){
 
 	return(
 		<div className="card-main">
-			<div className="card-image-bg" style={{backgroundImage: `url(${bgImage})`}}>
+			<a className="card-image-bg" href="#" title="This doesn't actually go anywhere." style={{backgroundImage: `url(${bgImage})`}}>
 				{/*<img src="#" alt="This is the thing we're talking about!"></img>*/}
-			</div>
+			</a>
 			<div className="card-preview-text" style={style}>
 				<h3>{props.info.previewTitle}</h3>
 				<p>{props.info.previewText}</p>

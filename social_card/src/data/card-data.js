@@ -7,7 +7,7 @@ var cardData = [{
 					authorText: "Dogs are great. Training them is even better."
 				},
 				mainProps: {
-					bgImage: "./images/matt-nelson-259365.jpg",
+					bgImage: "./images/matt-nelson-259365-comp.jpg",
 					previewTitle: "Find a trainer near you!",
 					previewText: "Take a moment and search for the best, most effective dog trainers in your area."
 				},
@@ -26,7 +26,7 @@ var cardData = [{
 					authorText: "Breakfast is the most important meal of the day."
 				},
 				mainProps: {
-					bgImage: "./images/rachel-park-366508.jpg",
+					bgImage: "./images/rachel-park-366508-comp.jpg",
 					previewTitle: "101 Breakfast ideas",
 					previewText: "Every way possible to create your favorite breakfasts, archived."
 				},
@@ -39,13 +39,13 @@ var cardData = [{
 				{
 				topProps: {
 					authorName: "Christopher Tiller",
-					authorImg: "./images/christopher-tiller.jpg",
+					authorImg: "./images/christopher-tiller-comp.jpg",
 					authorLink: "https://www.linkedin.com/in/christopher-tiller-9b853b129/",
 					authorSite: "LinkedIn",
 					authorText: "Hey guys, check out my blog post!"
 				},
 				mainProps: {
-					bgImage: "./images/matrix.jpg",
+					bgImage: "./images/matrix-comp.jpg",
 					previewTitle: "My ReactJS journey",
 					previewText: "React seems really intimidating to anyone starting out. Here's how to build some momentum."
 				},
@@ -58,7 +58,7 @@ var cardData = [{
 				{
 				topProps: {
 					authorName: "Jessica",
-					authorImg: "./images/woman.jpg",
+					authorImg: "./images/woman-comp.jpg",
 					authorLink: "https://pixabay.com/en/users/Jessica001234-3652586/",
 					authorSite: "pixabay",
 					authorText: "After a long nine months of waiting, Jason is finally ready to come out and say hello to the world!"
@@ -102,7 +102,7 @@ var cardData = [{
 					authorText: "Wait till you see #1."
 				},
 				mainProps: {
-					bgImage: "./images/anime_fight.jpg",
+					bgImage: "./images/anime_fight-comp.jpg",
 					previewTitle: "Top 10 anime battles",
 					previewText: "The top 10 best anime battles of 2017. What do you think?"
 				},

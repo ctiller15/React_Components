@@ -12,11 +12,11 @@ function CardTop(props) {
 	return(
 		<header className="card-top">
 			<div className="author-info">
-				<div className="icon" style={{backgroundImage: `url(${bgIcon})`}}>
+				<a href="#" title="this doesn't go anywhere either" className="icon" style={{backgroundImage: `url(${bgIcon})`}}>
 					{/*Photo by Matt Nelson on Unsplash*/}
 					{/*<img src={require("./images/matt-nelson.jpg")}/>*/}
-				</div>
-				<div className="creator-name">{props.author.authorName} via <a rel="noopener noreferrer" href={props.author.authorLink} target="_blank">{props.author.authorSite}</a></div>
+				</a>
+				<div className="creator-name">{props.author.authorName} via <a rel="noopener noreferrer" href={props.author.authorLink} title="This one actually DOES go somewhere though. Click it!" target="_blank">{props.author.authorSite}</a></div>
 			</div>
 			<div className="intro-text">
 				<p>{props.author.authorText}</p>
