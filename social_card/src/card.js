@@ -18,6 +18,11 @@ class SocialCard extends React.Component {
 							bgImage: "./images/matt-nelson-259365.jpg",
 							previewTitle: "Find a trainer near you!",
 							previewText: "Take a moment and search for the best, most effective dog trainers in your area."
+						},
+						socialProps: {
+							likes: 10,
+							comments: 25,
+							subscriptions: 8
 						}
 					};
 	}
@@ -26,7 +31,7 @@ class SocialCard extends React.Component {
 			<section className="card">
 				<CardTop author={this.state.topProps}/>
 				<CardMain info={this.state.mainProps}/>
-				<CardBottom/>
+				<CardBottom social={this.state.socialProps}/>
 			</section>
 		);
 	}
