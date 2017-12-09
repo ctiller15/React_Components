@@ -73,6 +73,44 @@ var cardData = [{
 					comments: 40,
 					subscriptions: 0
 				}
-					},];
+					},
+				{
+				topProps: {
+					authorName: "Dave Ceddia",
+					authorImg: "./images/daveceddia.jpg",
+					authorLink: "https://daveceddia.com/react-practice-projects/",
+					authorSite: "daveceddia.com",
+					authorText: "Practice makes perfect!"
+				},
+				mainProps: {
+					bgImage: "./images/react-practice-projects.png",
+					previewTitle: "React practice projects",
+					previewText: "Not sure where to go next on your reactJS learning path? Here are five projects to help you out."
+				},
+				socialProps: {
+					likes: 5,
+					comments: 2,
+					subscriptions: 90
+				}
+					},
+				{
+				topProps: {
+					authorName: "Geek Nation",
+					authorImg: "./images/goku.jpg",
+					authorLink: "https://www.youtube.com/watch?v=vS5I6bbSbto",
+					authorSite: "Youtube",
+					authorText: "Wait till you see #1."
+				},
+				mainProps: {
+					bgImage: "./images/anime_fight.jpg",
+					previewTitle: "Top 10 anime battles",
+					previewText: "The top 10 best anime battles of 2017. What do you think?"
+				},
+				socialProps: {
+					likes: 12,
+					comments: 140,
+					subscriptions: 20
+				}
+					}];
 
 export default cardData;

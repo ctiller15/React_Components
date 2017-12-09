@@ -15,8 +15,154 @@ body{
 	/*width: 90%;*/
 }
 
+.card{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-basis: 400px;
+	/*flex-grow: 1;*/
+	border: 1px solid black;
+	border-radius: 10px;
+	overflow: hidden;
+	margin-top: 10px;
+}
+
+.card>*{
+	/*border: 1px solid green;*/
+	flex-basis: 60px;
+	flex-grow: 1;
+}
+
+.card-top{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	flex-basis: auto;
+}
+
+.author-info{
+	display: flex;
+	justify-content: flex-start;
+}
+
+.author-info .icon{
+	/*border: 1px solid purple;*/
+	width: 60px;
+	height: 60px;
+	margin: 5px 5px 0 5px;
+	overflow: hidden;
+	border-radius: 30px;
+	/*Change image with javascript when using multiple images.*/
+	background-size: cover;
+	background-position: center;
+}
+
+/*.icon img{
+	width: 100%;
+	min-height: 100%;
+}*/
+
+.author-info .creator-name{
+	align-self: center;
+}
+
+.intro-text{
+	margin: 0px 5px;
+}
+
+.intro-text p{
+	margin: 5px;
+}
+
+.card-main{
+	flex-basis: 350px;
+	display: flex;
+	align-self: center;
+	width: 100%;
+	flex-direction: column;
+}
+
+.card-main>*{
+	flex-basis: 150px;
+	/*border: 1px solid red;*/
+	flex-grow: 1;
+}
+
+.card-image-bg{
+	flex-basis: 180px;
+	/*Again, use javascript and props to place different images in here.*/
+	/*background: url("./images/matt-nelson-259365.jpg");*/
+	background-size: cover;
+	background-position: center;
+	flex-grow: 2;
+}
+
+.card-preview-text{
+	flex-basis: 20px;
+	padding: 5px;
+}
+
+.card-preview-text h3{
+	margin: 10px auto;
+}
+
+.card-bottom{
+	display: flex;
+	flex-direction: row;
+}
+
+.card-bottom ul{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	flex-basis: 280px;
+	flex-grow: 1;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.social li{
+	flex-basis: 80px;
+	height: 3em;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.fa{
+	font-size: 1.8em;
+}
+
+.count{
+	font-size: 1.6em;
+}
+
 @media screen and (min-width: 768px){
 	.cardBoard{
 		/*width: 50%;*/
+	}
+
+	.card{
+		flex-basis: 350px;
+	}
+
+	.card-main .card-image-bg{
+		width: 80%;
+		align-self: center;
+	}
+
+}
+
+@media screen and (min-width: 1024px){
+	.card{
+		flex-basis: 450px;
+	}
+}
+
+@media screen and (min-width: 1224px){
+	.card{
+		flex-basis: 420px;
 	}
 }
